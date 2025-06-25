@@ -1,0 +1,83 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #ddd;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 12px;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 10px;
+  padding-right: 8px;
+}
+
+.message {
+  padding: 10px 12px;
+  border-radius: 8px;
+  max-width: 80%;
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.4;
+}
+
+.message.user {
+  align-self: flex-end;
+  background-color: #007acc;
+  color: white;
+}
+
+.message.ai {
+  align-self: flex-start;
+  background-color: #2d2d2d;
+  border: 1px solid #3a3a3a;
+}
+
+.input-box {
+  display: flex;
+  border-top: 1px solid #333;
+  padding: 8px;
+  gap: 8px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #2e2e2e;
+  color: #eee;
+  font-size: 14px;
+}
+
+.input-box input:focus {
+  outline: 2px solid #007acc;
+}
+
+.input-box button {
+  background-color: #007acc;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.input-box button:hover {
+  background-color: #005ea1;
+}
