@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 import * as path from 'path';
 import fetch from 'node-fetch';
 
-const OPENAI_API_KEY = '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'; // ← Replace this
+const OPENAI_API_KEY = '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';
 
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
